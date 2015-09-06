@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/pcmain.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/myfloor.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="p_topnavbox">
+    <div class="main clr">
+        <a href="index.html" title="回到首页" class="p_logo"><img src="images/logo.png" alt="" /></a>
+        <ul class="p_topnav">
+            <li><a class="clicked" href="index.html">首页</a></li>
+            <li><a href="我的楼盘.html">我的楼盘</a></li>
+            <li><a href="家居商城.html">家居商城</a></li>
+            <li><a href="3D实景DIY.html">3D实景DIY</a></li>
+            <li><a href="设计师.html">设计师</a></li>
+        </ul>
+        <div class="p_tpright">
+            <div class="p_tpssbox">
+                <div class="p_tpssleft">
+                    <span class="p_tpsspan p_insword">楼盘/小区</span>
+                    <i class="iconfont p_iniconf">&#xe651;</i>
+                    <ul class="p_tpssul p_insxuan">
+                        <li>楼盘/小区</li>
+                        <li>商品</li>
+                        <li>商家</li>
+                        <li>设计师</li>
+                        <li>方案</li>
+                    </ul>
+                    <ul class="p_tpsstip p_ssrtul">
+                        <li>输入楼盘关键词</li>
+                        <li>输入商品的关键词</li>
+                        <li>输入要搜索的商家</li>
+                        <li>输入要搜索的设计师</li>
+                        <li>输入要搜索的方案</li>
+                    </ul>
+                </div>
+                <div class="p_tpssright">
+                    <input type="text" class="p_tptext p_insstext" />
+                </div>
+                <a href="javascript:void(0)" class="p_tpsearchbtn" title="搜索"><i class="iconfont">&#xe655;</i></a>
+            </div>
+            <a href="购物车.html" title="购物车"><i class="iconfont">&#xe60e;</i></a>
+            <a href="javascript:void(0);" class="login">登录</a>
+            <a href="javascript:void(0);" class="reg">注册</a>
+            <a href="帮助中心.html">帮助<i class="iconfont">&#xe651;</i></a>
+            <a class="p_tpclose" title="关闭导航"><i class="iconfont">&#xe63e;</i></a>
+        </div>
+    </div>
+</div>
+<!-- 登录弹窗 -->
+<div class="ly_loginbox"></div>
+<div class="ly_loginmain ly_loginmain01">
+    <div class="ly_logintop">
+        <img src="images/ly_logo.png" /><span><i>|</i>拎包入住  立买即住</span>
+    </div>
+    <div class="ly_loginwrap">
+        <h3>登录</h3>
+        <ul class="ly_loginlist">
+            <li>
+                <div class="ly_loginuser">
+                    <p class="ly_loginico"><i class="iconfont">&#xe638;</i></p>
+                    <p class="ly_logintxt">
+                        <label class="ly_logintxtbox intips">输入手机号码或邮箱地址</label>
+                        <input type="text" class="p_input">
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="ly_loginuser">
+                       <p class="ly_loginico"><i class=" iconfont">&#xe603;</i></p>
+                        <p class="ly_logintxt">
+                            <label class="ly_logintxtbox intips">输入密码</label>
+                            <input type="text" class="p_input">
+                        </p>
+                </div>
+            </li>
+        </ul>
+        <div class="ly_loginauto"><span><a href="javascript:void(0);" class="idcard">忘记密码</a></span><i class="icoTic ly_iready"></i>自动登录</div>
+        <div class="ly_loginbnt">
+            <input type="button" class="hop"  value="立即登录" >
+        </div>
+        <div class="ly_gotoreg">
+            <span>没有密码？<a href="javascript:void(0);" class="reg">马上注册>></a></span>
+            <a href="">返回买吉住首页</a>
+        </div>
+        <div class="ly_loginclose icoTic" title="关闭"><span>×</span></div>
+    </div>
+</div>
+<!-- 注册弹窗 -->
+<div class="ly_regmain">
+    <div class="ly_logintop">
+        <img src="images/ly_logo.png" /><span><i>|</i>拎包入住  立买即住</span>
+    </div>
+    <div class="ly_loginwrap">
+        <h3>注册</h3>
+        <ul class="ly_loginlist">
+            <li>
+                <div class="ly_loginuser">
+                      <p class="ly_loginico"><i class="iconfont">&#xe638;</i></p>
+                            <p class="ly_logintxt">
+                                <label class="ly_logintxtbox intips">输入手机号码或邮箱地址</label>
+                                <input type="text" class="p_input">
+                            </p>
+                </div>
+            </li>
+            <li>
+                <div class="ly_loginuser">
+                       <p class="ly_loginico"><i class=" iconfont">&#xe603;</i></p>
+                            <p class="ly_logintxt">
+                                <label class="ly_logintxtbox intips">输入密码</label>
+                                <input type="text" class="p_input">
+                            </p>
+                </div>
+            </li>
+            <li>
+                <div class="ly_loginuser ly_regbox">
+                       <p class="ly_loginico"><i class=" iconfont">&#xe60c;</i></p>
+                            <p class="ly_logintxt">
+                                <label class="ly_logintxtbox intips">输入验证码</label>
+                                <input type="text" class="p_input">
+                            </p>
+                </div>
+                <div class="ly_regcopy">
+                    <a href="" class="ly_regcopypop">获取验证码</a>
+                </div>
+            </li>
+        </ul>
+        <div class="ly_loginauto"><i class="icoTic ly_iready"></i>我已阅读并同意<a href="">《买吉住用户注册协议》</a></div>
+        <div class="ly_loginbnt">
+            <input type="button" class="hop s_registerbtn" value="立即注册" >
+        </div>
+        <div class="ly_gotoreg">
+            <span>已有账号？<a href="javascript:void(0);" class="login">马上登录>></a></span>
+            <a href="">返回买吉住首页</a>
+        </div>
+        <div class="ly_loginclose icoTic" title="关闭"><span>×</span></div>
+    </div>
+</div>
+<!-- 注册成功弹窗 -->
+<div class="ly_loginmain s_registerok">
+   <div class="ly_logintop">
+        <img src="images/ly_logo.png" /><span><i>|</i>拎包入住  立买即住</span>
+    </div>
+    <div class="ly_loginwrap">
+                <h3>注册成功</h3>
+                 <p class="ly_regsuecc">请选择你的角色</p>
+                 <div class="ly_regsel">
+                        <ul>
+                            <li>
+                                    <div>
+                                            <i class="iconfont">&#xe649;</i>
+                                    </div>
+                                    <p>业主</p>
+                            </li>
+                            <li>
+                                    <div>
+                                            <i class="iconfont">&#xe648;</i>
+                                    </div>
+                                    <p>设计师</p>
+                            </li>
+                            <li>
+                                    <div>
+                                            <i class="iconfont">&#xe643;</i>
+                                    </div>
+                                    <p>商家</p>
+                            </li>
+                        </ul>
+                  </div>
+                <a href="" class="ly_regauto hop"><i>28s</i>自动跳转</a>
+                <a href="" class="ly_reggoto">返回买吉住首页</a>
+
+                <div class="ly_loginclose icoTic" title="关闭"><span>×</span></div>
+    </div>
+</div>
+<!-- 找回密码弹窗 -->
+<div class="ly_idcradWrap clr">
+   <div class="ly_logintop">
+        <img src="images/ly_logo.png" /><span><i>|</i>拎包入住  立买即住</span>
+    </div>
+    <div class="ly_loginwrap">
+                <h3>找回密码</h3>
+                 <div class="ly_idcradJdt clr">
+                        <div class="ly_idcradjdtbg icoTic">  </div>
+                        <div class="ly_idcradjdtper icoTic">  </div>
+                        <ul class="ly_idcradjdtli">
+                            <li >填写信息</li>
+                            <li >验证身份</li>
+                            <li >设置新密码</li>
+                            <li >完成</li>
+                        </ul>
+                 </div>
+                 <ul class="ly_passwrodjdt">
+                        <li>
+                                <div class="ly_idcradmain">
+                                    <ul class="ly_loginlist">
+                                            <li>
+                                                <div class="ly_loginuser">
+                                                      <p class="ly_loginico"><i class="iconfont">&#xe638;</i></p>
+                                                            <p class="ly_logintxt">
+                                                                <label class="ly_logintxtbox intips">输入手机号码或邮箱地址</label>
+                                                                <input type="text" class="p_input">
+                                                            </p>
+                                                </div>
+                                            </li>
+                                       
+                                            <li>
+                                                <div class="ly_loginuser ly_regbox">
+                                                       <p class="ly_loginico"><i class=" iconfont">&#xe60c;</i></p>
+                                                            <p class="ly_logintxt">
+                                                                <label class="ly_logintxtbox intips">输入验证码</label>
+                                                                <input type="text" class="p_input">
+                                                            </p>
+                                                </div>
+                                                <div class="ly_regcopy">
+                                                    <a href="" class="ly_zhmmimg">
+                                                            <img src="images/copy.png">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                     <div class="ly_idcradbnt">
+                                            <a class="hop ly_idcradnext">下一步</a>
+                                     </div>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="ly_idcradmain">
+                                    <table cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td valign="top"><i class="iconfont">&#xe63d;</i></td>
+                                            <td>
+                                                <p>请点击获取验证码并在手机：137****9775 中查看短信 </p>
+                                            </td>
+                                        </tr>
+                                     </table>
+                                    <ul class="ly_loginlist">
+                                            <li>
+                                                <div class="ly_loginuser ly_regbox">
+                                                       <p class="ly_loginico"><i class=" iconfont">&#xe60c;</i></p>
+                                                            <p class="ly_logintxt">
+                                                                <label class="ly_logintxtbox intips">输入验证码</label>
+                                                                <input type="text" class="p_input">
+                                                            </p>
+                                                </div>
+                                                <div class="ly_regcopy">
+                                                    <a href="" class="ly_regcopypop">获取验证码</a>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                     <div class="ly_idcradbnt">
+                                            <a class="hop ly_idcradnext">下一步</a>
+                                     </div>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="ly_idcradmain pt20">
+                                        <ul class="ly_loginlist">
+                                                    <li>
+                                                            <div class="ly_loginuser">
+                                                                   <p class="ly_loginico"><i class=" iconfont">&#xe603;</i></p>
+                                                                        <p class="ly_logintxt">
+                                                                            <label class="ly_logintxtbox intips">输入密码</label>
+                                                                            <input type="password" class="p_input">
+                                                                        </p>
+                                                            </div>
+                                                        </li>
+                                                       <li>
+                                                            <div class="ly_loginuser">
+                                                                   <p class="ly_loginico"><i class=" iconfont">&#xe603;</i></p>
+                                                                        <p class="ly_logintxt">
+                                                                            <label class="ly_logintxtbox intips">输入密码</label>
+                                                                            <input type="password" class="p_input">
+                                                                        </p>
+                                                            </div>
+                                                        </li>
+                                            </ul>
+                                             <div class="ly_idcradbnt">
+                                                    <a  class="hop ly_idcradnext">下一步</a>
+                                             </div>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="ly_idcradmain clr">
+                                    <table cellspacing="0" cellpadding="0" class="ly_idcradtable">
+                                        <tr>
+                                            <td valign="top"><i class="iconfont">&#xe63d;</i></td>
+                                            <td>
+                                                <p>请您牢记新密码，新密码设置成功！ </p>
+                                            </td>
+                                        </tr>
+                                     </table>
+                                  
+                                     <div class="ly_idcradbnt mb64">
+                                            <a href="" class="hop ly_idcradpop">重新登陆</a><a href="" class="hop ly_idcradway">返回首页</a>
+                                     </div>
+                                </div>
+                        </li>
+                    </ul>
+                <div class="ly_loginclose icoTic" title="关闭"><span>×</span></div>
+    </div>
+</div>
+<div class="ly_emailWrap">
+   <div class="ly_logintop">
+        <img src="images/ly_logo.png" /><span><i>|</i>拎包入住  立买即住</span>
+    </div>
+    <div class="ly_loginwrap">
+                <h3>找回密码</h3>
+                 <div class="ly_idcradJdt clr">
+                        <div class="ly_idcradjdtbg icoTic">  </div>
+                        <div class="ly_idcradjdtper icoTic">  </div>
+                        <ul class="ly_idcradjdtli">
+                            <li  class="active">填写信息</li>
+                            <li class="active">验证身份</li>
+                            <li class="active">设置新密码</li>
+                            <li class="active">完成</li>
+                        </ul>
+                 </div>
+                <div class="ly_idcrademail">
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td valign="top"><i class="iconfont">&#xe63d;</i></td>
+                            <td>
+                                <p>确认邮件已发送至您的邮箱：zha******@eims.com.cn
+                                请您<a href=""> 登录邮箱</a> 完成验证 </p>
+                            </td>
+                        </tr>
+                     </table>
+                     <div class="ly_idcradbnt">
+                            <a href="" class="hop ly_idcradpop">重新发送</a><a class="ly_idcradway">返回选择验证方式</a>
+                     </div>
+                </div>
+                <div class="ly_loginclose icoTic" title="关闭"><span>×</span></div>
+    </div>
+</div>
+<!-- fu-chuang -->
+<div class="y_fcbg">
+    <ul>
+        <li>
+            <a href="#" title="" class="a1"><i class="iconfont i1">&#xe64d;</i></a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" title="" class="a2">
+                <i class="iconfont i1">&#xe64c;</i>
+                <span class="y_htcwx">
+                    <span>扫一扫二维码<br/>关注我们</span>
+                    <span class="y_htcws1">◆</span>
+                    <span class="y_htcws2">◆</span>
+                    <img src="images/p_erwm.png" />
+                </span>
+            </a>
+        </li>
+        <li class="p_gotop">
+            <a href="#" title=""><i class="iconfont i1">&#xe64e;</i></a>
+        </li>
+    </ul>
+</div>
+<!-- end -->
+<!--banner开始-->
+<div class="fullSlide">
+    <div class="bd">
+        <ul>
+            <li _src="url(images/banner01.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/banner02.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/banner03.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/banner04.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/banner05.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/banner06.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/banner07.png)"><a target="" href="#" title=""></a></li>
+        </ul>
+    </div>
+    <div class="p_bannermb"></div>
+</div>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+<script type="text/javascript">
+    jQuery(".fullSlide").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        autoPage: true,
+        trigger: "mouseover",
+        startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+            if ( !! curLi.attr("_src")) {
+                curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+            }
+        }
+    });
+</script>
+<div class="main p_progaganbox">
+    <div class="p_propaganda">
+        <h4>拎包入住，立买即住</h4>
+        <div class="p_pronumber">已覆盖全国<strong>1,890</strong>个楼盘小区户型数据，已经有<strong>8,769</strong>位业主入驻享受到一站式解决便利！</div>
+        <div class="p_inchoice">
+            <div class="p_inchoiceleft">
+                <span class="p_inchotit p_insword">楼盘/小区</span><i class="iconfont p_inicon01">&#xe651;</i>
+                <ul class="p_inchoselcet p_insxuan">
+                    <li>楼盘/小区</li>
+                    <li>商品</li>
+                    <li>商家</li>
+                    <li>设计师</li>
+                    <li>方案</li>
+                </ul>
+                <ul class="p_inchotips p_ssrtul">
+                    <li>输入楼盘/小区名称的关键词</li>
+                    <li>输入要搜索商品的关键词</li>
+                    <li>输入要搜索的商家</li>
+                    <li>输入要搜索的设计师</li>
+                    <li>输入要搜索的方案</li>
+                </ul>
+            </div>
+            <div class="p_inchoiceright">
+                <input type="text" class="p_intext p_insstext" />
+            </div>
+            <a class="p_insearchbtn"><i class="iconfont">&#xe655;</i></a>
+        </div>
+        <div class="p_inchoiceadd"><em>广东</em>省 <em>深圳</em>市，热门搜索：碧桂园十里银滩 、华润小径湾、惠州山水龙城、中海锦城、中海誉城<a href="javascript:void(0)" class="p_inchanceadd tc_btn">切换城市</a></div>
+    </div>
+</div>
+<div class="main p_pronextbox"><div class="p_pronextbtn"></div></div>
+<!--内容区-->
+<div class="main pt50 s_offTop">
+    <h3 class="p_in_maintitle mt35">热门风格</h3>
+    <h5 class="p_in_subtitle mb35">搜罗全球热门风格，在世界各地缔造一个个有归属感的家</h5>
+    <div class="clr p_in_picturebox">
+        <ul class="p_in_picul fl">
+            <li class="p_in_li01 bigPic" onclick="window.location.href='###'">
+                <img src="images/p_in_pic01.png" alt="" />
+                <div class="p_in_pictext">
+                    <p>田园式生活理念，运用大面积水原木颜色，此木纹的色彩温馨和谐，仿佛冬日的暖阳，让人看在眼里，暖在心里，给你温暖如阳的视觉享受……</p>
+                    <span class="p_in_sptext"><em>挪威森林</em><br /><span>2,134</span>套</span>
+                </div>
+            </li>
+            <li class="p_in_li03" onclick="window.location.href='###'">
+                <img src="images/p_in_pic02.png" alt="" />
+                <div class="p_in_pictext">
+                    <p>田园式生活理念，运用大面积水原木颜色，此木纹的色彩温馨和谐，仿佛冬日的暖阳，让人看在眼里，暖在心里，给你温暖如阳的视觉享受……</p>
+                    <span class="p_in_sptext"><em>挪威森林</em><br /><span>2,134</span>套</span>
+                </div>
+            </li>
+            <li class="p_in_li04" onclick="window.location.href='###'">
+                <img src="images/p_in_pic03.png" alt="" />
+                <div class="p_in_pictext">
+                    <p>田园式生活理念，运用大面积水原木颜色，此木纹的色彩温馨和谐，仿佛冬日的暖阳，让人看在眼里，暖在心里，给你温暖如阳的视觉享受……</p>
+                    <span class="p_in_sptext"><em>挪威森林</em><br /><span>2,134</span>套</span>
+                </div>
+            </li>
+        </ul>
+        <ul class="p_in_picul fr">
+            <li class="p_in_li01" onclick="window.location.href='###'">
+                <img src="images/p_in_pic04.png" alt="" />
+                <div class="p_in_pictext">
+                    <p>田园式生活理念，运用大面积水原木颜色，此木纹的色彩温馨和谐，仿佛冬日的暖阳，让人看在眼里，暖在心里，给你温暖如阳的视觉享受……</p>
+                    <span class="p_in_sptext"><em>挪威森林</em><br /><span>2,134</span>套</span>
+                </div>
+            </li>
+            <li class="p_in_li02" onclick="window.location.href='###'">
+                <img src="images/p_in_pic05.png" alt="" />
+                <div class="p_in_pictext">
+                    <p>田园式生活理念，运用大面积水原木颜色，此木纹的色彩温馨和谐，仿佛冬日的暖阳，让人看在眼里，暖在心里，给你温暖如阳的视觉享受……</p>
+                    <span class="p_in_sptext"><em>挪威森林</em><br /><span>2,134</span>套</span>
+                </div>
+            </li>
+            <li class="p_in_li03 bigPic" onclick="window.location.href='###'">
+                <img src="images/p_in_pic06.png" alt="" />
+                <div class="p_in_pictext">
+                    <p>田园式生活理念，运用大面积水原木颜色，此木纹的色彩温馨和谐，仿佛冬日的暖阳，让人看在眼里，暖在心里，给你温暖如阳的视觉享受……</p>
+                    <span class="p_in_sptext"><em>挪威森林</em><br /><span>2,134</span>套</span>
+                </div>
+            </li>
+        </ul>
+        <div class="p_in_hotmore"><a href="###">查看更多</a></div>
+    </div>
+    <h3 class="p_in_maintitle"><em>深圳</em>楼盘案例</h3>
+    <h5 class="p_in_subtitle">已 6,666,666 位业主查看到楼盘各种户型的搭配案例</h5>
+    <div class="p_in_chance">
+        <a href="javascript:void(0)">换一批 <i class="iconfont">&#xe642;</i></a>
+    </div>
+    <ul class="p_in_hotlpbox clr">
+        <li><img src="images/p_in_pic01.png" alt="" /><div class="p_in_iword"><em>1866绿景中央公馆</em><span>搭配方案  288</span></div></li>
+        <li><img src="images/p_in_pic02.png" alt="" /><div class="p_in_iword"><em>1866绿景中央公馆</em><span>搭配方案  288</span></div></li>
+        <li><img src="images/p_in_pic03.png" alt="" /><div class="p_in_iword"><em>1866绿景中央公馆</em><span>搭配方案  288</span></div></li>
+        <li><img src="images/p_in_pic04.png" alt="" /><div class="p_in_iword"><em>1866绿景中央公馆</em><span>搭配方案  288</span></div></li>
+    </ul>
+    <div class="p_in_hotmore"><a href="###">找我的楼盘</a></div>
+    <h3 class="p_in_maintitle">热门户型搭配方案</h3>
+    <h5 class="p_in_subtitle">已拥有各种户型不同风格搭配方案<em>28,970</em>套</h5>
+    <div class="p_in_selecon">
+        <span class="m_select_span">
+            <span class="fl">选择户型</span> <em class="iconfont m_bottom">&#xe651;</em> <em class="iconfont m_top">&#xe650;</em>
+            <ul class="m_select_chList">
+                <li><a href="javascript:void(0);">一居室</a></li>
+                <li><a href="javascript:void(0);">二居室</a></li>
+                <li><a href="javascript:void(0);">三居室</a></li>
+                <li><a href="javascript:void(0);">四居室</a></li>
+                <li><a href="javascript:void(0);">复式</a></li>
+                <li><a href="javascript:void(0);">别墅</a></li>
+                <li><a href="javascript:void(0);">其他</a></li>
+            </ul>
+        </span>
+        <span class="m_select_span">
+            <span class="fl">选择风格</span> <em class="iconfont m_bottom">&#xe651;</em> <em class="iconfont m_top">&#xe650;</em>
+            <ul class="m_select_chList">
+                <li><a href="javascript:void(0);">中式</a></li>
+                <li><a href="javascript:void(0);">现代</a></li>
+                <li><a href="javascript:void(0);">地中海</a></li>
+                <li><a href="javascript:void(0);">美式</a></li>
+                <li><a href="javascript:void(0);">欧式</a></li>
+                <li><a href="javascript:void(0);">新古典</a></li>
+                <li><a href="javascript:void(0);">简约</a></li>
+            </ul>
+        </span>
+    </div>
+    <div class="p_in_chance">
+        <a href="javascript:void(0)">换一批 <i class="iconfont">&#xe642;</i></a>
+    </div>
+    <ul class="p_in_hothxbox clr">
+        <li>
+            <img src="images/p_in_pic01.png" alt="" />
+            <div class="p_in_hlike"><span class="org"><i class="iconfont">&#xe613;</i> 8554</span><br /><span class="cofff">四居室</span></div>
+            <div class="p_in_hword"><span>[ 华润小径湾复式 ] 一户型-客餐厅活</span></div>
+        </li>
+        <li>
+            <img src="images/p_in_pic02.png" alt="" />
+            <div class="p_in_hlike"><span class="org"><i class="iconfont">&#xe613;</i> 8554</span><br /><span class="cofff">四居室</span></div>
+            <div class="p_in_hword"><span>[ 华润小径湾复式 ] 一户型-客餐厅活</span></div>
+        </li>
+        <li>
+            <img src="images/p_in_pic03.png" alt="" />
+            <div class="p_in_hlike"><span class="org"><i class="iconfont">&#xe613;</i> 8554</span><br /><span class="cofff">四居室</span></div>
+            <div class="p_in_hword"><span>[ 华润小径湾复式 ] 一户型-客餐厅活</span></div>
+        </li>
+        <li>
+            <img src="images/p_in_pic04.png" alt="" />
+            <div class="p_in_hlike"><span class="org"><i class="iconfont">&#xe613;</i> 8554</span><br /><span class="cofff">四居室</span></div>
+            <div class="p_in_hword"><span>[ 华润小径湾复式 ] 一户型-客餐厅活</span></div>
+        </li>
+        <li>
+            <img src="images/p_in_pic05.png" alt="" />
+            <div class="p_in_hlike"><span class="org"><i class="iconfont">&#xe613;</i> 8554</span><br /><span class="cofff">四居室</span></div>
+            <div class="p_in_hword"><span>[ 华润小径湾复式 ] 一户型-客餐厅活</span></div>
+        </li>
+        <li>
+            <img src="images/p_in_pic06.png" alt="" />
+            <div class="p_in_hlike"><span class="org"><i class="iconfont">&#xe613;</i> 8554</span><br /><span class="cofff">四居室</span></div>
+            <div class="p_in_hword"><span>[ 华润小径湾复式 ] 一户型-客餐厅活</span></div>
+        </li>
+    </ul>
+    <div class="p_in_hotmore"><a href="###">查看更多</a></div>
+    <h3 class="p_in_maintitle">设计师推荐</h3>
+    <h5 class="p_in_subtitle"><em>8,970 </em>位设计师入驻平台帮忙提供一站式便捷体验</h5>
+    <div class="p_in_joins"><a href="###" class="hop">您是设计师，赶快加入吧！</a></div>
+    <div class="p_in_chance">
+        <a href="javascript:void(0)">换一批 <i class="iconfont"></i></a>
+    </div>
+    <ul class="p_in_shejis clr">
+        <li>
+            <img src="images/p_in_ico02.png" alt="" />
+            <h5>李怡</h5>
+            <h6>【擅长的设计风格】</h6>
+            <div>“ 中国韵  |  古典主义  |  新中式风格  |  地中海 ”</div>
+        </li>
+        <li>
+            <img src="images/p_in_ico02.png" alt="" />
+            <h5>孙庆阳</h5>
+            <h6>【擅长的设计风格】</h6>
+            <div>“ 中国韵  |  古典主义  |  新中式风格  |  地中海 ”</div>
+        </li>
+        <li>
+            <img src="images/p_in_ico03.png" alt="" />
+            <h5>田阳</h5>
+            <h6>【擅长的设计风格】</h6>
+            <div>“ 中国韵  |  古典主义  |  新中式风格  |  地中海 ”</div>
+        </li>
+        <li>
+            <img src="images/p_in_ico04.png" alt="" />
+            <h5>洪晓旋</h5>
+            <h6>【擅长的设计风格】</h6>
+            <div>“ 中国韵  |  古典主义  |  新中式风格  |  地中海 ”</div>
+        </li>
+        <li>
+            <img src="images/p_in_ico05.png" alt="" />
+            <h5>Tommy</h5>
+            <h6>【擅长的设计风格】</h6>
+            <div>“ 中国韵  |  古典主义  |  新中式风格  |  地中海 ”</div>
+        </li>
+    </ul>
+    <h3 class="p_in_maintitle">优质合作商家</h3>
+    <ul class="p_in_frlink clr">
+        <li><a href="###"><img src="images/p_fr01.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr02.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr03.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr04.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr05.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr06.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr07.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr08.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr09.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr10.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr11.png" alt="" /></a></li>
+        <li><a href="###"><img src="images/p_fr12.png" alt="" /></a></li>
+    </ul>
+    <h3 class="p_in_maintitle">热门秀家</h3>
+    <h5 class="p_in_subtitle p_in_tpsubtt">正品行货，精致服务，口碑相传</h5>
+    <ul class="p_in_hothumer clr">
+        <li>
+            <img src="images/p_in_pic07.png" alt="" class="fl" />
+            <div class="p_in_humword">
+                <i class="iconfont icon01">&#xe64b;</i>
+                家居的装饰都选择的比较简洁的色彩，也比较与家具搭配，整体的家具定制风格都突出了···
+                <i class="iconfont icon02">&#xe64a;</i>
+            </div>
+            <div class="p_in_hutx">
+                <img src="images/p_in_ico01.png" alt="" />
+                <span>Miaka</span>
+            </div>
+        </li>
+        <li>
+            <img src="images/p_in_pic08.png" alt="" class="fl" />
+            <div class="p_in_humword">
+                <i class="iconfont icon01">&#xe64b;</i>
+                家居的装饰都选择的比较简洁的色彩，也比较与家具搭配，整体的家具定制风格都突出了···
+                <i class="iconfont icon02">&#xe64a;</i>
+            </div>
+            <div class="p_in_hutx">
+                <img src="images/p_in_ico02.png" alt="" />
+                <span>Miaka</span>
+            </div>
+        </li>
+        <li>
+            <img src="images/p_in_pic09.png" alt="" class="fl" />
+            <div class="p_in_humword">
+                <i class="iconfont icon01">&#xe64b;</i>
+                家居的装饰都选择的比较简洁的色彩，也比较与家具搭配，整体的家具定制风格都突出了···
+                <i class="iconfont icon02">&#xe64a;</i>
+            </div>
+            <div class="p_in_hutx">
+                <img src="images/p_in_ico03.png" alt="" />
+                <span>Miaka</span>
+            </div>
+        </li>
+        <li>
+            <img src="images/p_in_pic10.png" alt="" class="fl" />
+            <div class="p_in_humword">
+                <i class="iconfont icon01">&#xe64b;</i>
+                家居的装饰都选择的比较简洁的色彩，也比较与家具搭配，整体的家具定制风格都突出了···
+                <i class="iconfont icon02">&#xe64a;</i>
+            </div>
+            <div class="p_in_hutx">
+                <img src="images/p_in_ico04.png" alt="" />
+                <span>Miaka</span>
+            </div>
+        </li>
+        <li>
+            <img src="images/p_in_pic11.png" alt="" class="fl" />
+            <div class="p_in_humword">
+                <i class="iconfont icon01">&#xe64b;</i>
+                家居的装饰都选择的比较简洁的色彩，也比较与家具搭配，整体的家具定制风格都突出了···
+                <i class="iconfont icon02">&#xe64a;</i>
+            </div>
+            <div class="p_in_hutx">
+                <img src="images/p_in_ico05.png" alt="" />
+                <span>Miaka</span>
+            </div>
+        </li>
+        <li>
+            <img src="images/p_in_pic12.png" alt="" class="fl" />
+            <div class="p_in_humword">
+                <i class="iconfont icon01">&#xe64b;</i>
+                家居的装饰都选择的比较简洁的色彩，也比较与家具搭配，整体的家具定制风格都突出了···
+                <i class="iconfont icon02">&#xe64a;</i>
+            </div>
+            <div class="p_in_hutx">
+                <img src="images/p_in_ico01.png" alt="" />
+                <span>Miaka</span>
+            </div>
+        </li>
+    </ul>
+    <div class="p_in_joins p_in_zhucebtn"><a href="###" class="hop">立即注册，免费浏览更多方案</a></div>
+</div>
+<!--底部-->
+<div class="p_footerbox">
+    <div class="p_footer01">
+        <div class="main clr p_ft_main1">
+            <div class="p_ft_left">
+                <img src="images/p_ft_logo.png" alt="" />
+                <p class="p_ft_phone">4006-620-605</p>
+                <p class="p_ft_24hours">24小时为您服务</p>
+            </div>
+            <dl class="p_ft_maplink01">
+                <dt>新手指南</dt>
+                <dd><a href="账户管理.html">账户管理</a></dd>
+                <dd><a href="购物流程.html">购物流程</a></dd>
+                <dd><a href="支付方式.html">支付方式</a></dd>
+                <dd><a href="配送安装.html">配送安装</a></dd>
+            </dl>
+            <dl class="p_ft_maplink02">
+                <dt>网站地图</dt>
+                <dd><a href="搭配知识.html">搭配知识</a></dd>
+                <dd><a href="找风格.html">找风格</a></dd>
+                <dd><a href="找设计.html">找设计</a></dd>
+                <dd><a href="找套装.html">找套装</a></dd>
+            </dl>
+            <dl class="p_ft_maplink03">
+                <dt>常见问题</dt>
+                <dd><a href="###">设计师如何匹配商家商品？</a></dd>
+                <dd><a href="###">订单24小时之内自动取消？</a></dd>
+                <dd><a href="###">如何参加秒杀活动？</a></dd>
+            </dl>
+            <div class="p_ft_erwm">
+                <img src="images/p_erwm.png" alt="" />
+                <p>扫一扫二维码</p>
+                <p>关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="p_footer02">
+        <div class="main p_ft_main2">
+            <div class="p_ft_fslink">
+                <a href="关于我们.html">关于我们</a> |
+                <a href="加入我们.html">加入我们</a> |
+                <a href="隐私声明.html">隐私声明</a> |
+                <a href="联系我们.html">联系我们</a> |
+                <a href="建议反馈.html">建议反馈</a> |
+                <a href="友情链接.html">友情链接</a> |
+                <a href="商家入驻.html">商家入驻</a> |
+                <a href="申请设计师.html">申请设计师</a>
+            </div>
+            <div class="p_ft_beian">Copyright© 买吉住 2015. All Rights Reserved. 粤ICP备13075660-1</div>
+        </div>
+    </div>
+</div>
+<!-- 选择地区弹窗 -->
+<div class="p_black_bg tc_maxbg"></div>
+<div class="p_choice_add tc_box">
+    <div class="p_tc_close"><a class="tc_close" title="关闭本框"><span>×</span></a></div>
+    <div class="p_pls_addbox">请选择您所在城市或收货地区：<em>深圳</em></div>
+    <ul class="p_addlistul clr">
+        <li><span>北京</span></li>
+        <li><span>上海</span></li>
+        <li><span>广州</span></li>
+        <li><span class="clicked">深圳</span></li>
+        <li><span>天津</span></li>
+        <li><span>苏州</span></li>
+        <li><span>杭州</span></li>
+        <li><span>南京</span></li>
+        <li><span>无锡</span></li>
+        <li><span>青岛</span></li>
+        <li><span>武汉</span></li>
+    </ul>
+    <table class="p_add_table" width="100%">
+        <tr height="52">
+            <th>华东</th>
+            <td><span>上海</span><span>浙江</span><span>江苏</span><span>安徽</span></td>
+        </tr>
+        <tr height="52">
+            <th>华南</th>
+            <td><span>广东</span><span>福建</span><span>海南</span><span>广西</span></td>
+        </tr>
+        <tr height="52">
+            <th>华北</th>
+            <td><span>北京</span><span>天津</span><span>河北</span><span>山东</span><span>山西</span><span>内蒙</span></td>
+        </tr>
+        <tr height="52">
+            <th>华中</th>
+            <td><span>湖北</span><span>江西</span><span>湖南</span><span>河南</span></td>
+        </tr>
+        <tr height="52">
+            <th>东北</th>
+            <td><span>辽宁</span><span>吉林</span><span>黑龙江</span></td>
+        </tr>
+        <tr height="52">
+            <th>西南</th>
+            <td><span>重庆</span><span>西川</span><span>云南</span><span>贵州</span><span>西藏</span></td>
+        </tr>
+    </table>
+</div>
+<!-- end -->
+</body>
+</html>

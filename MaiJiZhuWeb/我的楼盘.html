@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/pcmain.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/myfloor.js"></script>
+    <title>我的楼盘</title>
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="p_topnavbox">
+    <div class="main clr">
+        <a href="index.html" title="回到首页" class="p_logo"><img src="images/logo.png" alt="" /></a>
+        <ul class="p_topnav">
+            <li><a href="index.html">首页</a></li>
+            <li><a class="clicked" href="我的楼盘.html">我的楼盘</a></li>
+            <li><a href="家居商城.html">家居商城</a></li>
+            <li><a href="3D实景DIY.html">3D实景DIY</a></li>
+            <li><a href="设计师.html">设计师</a></li>
+        </ul>
+        <div class="p_tpright">
+            <div class="p_tpssbox">
+                <div class="p_tpssleft">
+                    <span class="p_tpsspan p_insword">楼盘/小区</span>
+                    <i class="iconfont p_iniconf">&#xe651;</i>
+                    <ul class="p_tpssul p_insxuan">
+                        <li>楼盘/小区</li>
+                        <li>商品</li>
+                        <li>商家</li>
+                        <li>设计师</li>
+                        <li>方案</li>
+                    </ul>
+                    <ul class="p_tpsstip p_ssrtul">
+                        <li>输入楼盘关键词</li>
+                        <li>输入商品的关键词</li>
+                        <li>输入要搜索的商家</li>
+                        <li>输入要搜索的设计师</li>
+                        <li>输入要搜索的方案</li>
+                    </ul>
+                </div>
+                <div class="p_tpssright">
+                    <input type="text" class="p_tptext p_insstext" />
+                </div>
+                <a href="javascript:void(0)" class="p_tpsearchbtn" title="搜索"><i class="iconfont">&#xe655;</i></a>
+            </div>
+            <a href="购物车.html" title="购物车"><i class="iconfont">&#xe60e;</i></a>
+            <a href="###">登录</a>
+            <a href="###">注册</a>
+            <a href="帮助中心.html">帮助<i class="iconfont">&#xe651;</i></a>
+            <a class="p_tpclose" title="关闭导航"><i class="iconfont">&#xe63e;</i></a>
+        </div>
+    </div>
+</div>
+<!--banner开始-->
+<div class="fullSlide fullSlide2">
+    <div class="bd">
+        <ul>
+            <li _src="url(images/lpbanner01.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/lpbanner02.png)"><a target="" href="#" title=""></a></li>
+            <li _src="url(images/lpbanner03.png)"><a target="" href="#" title=""></a></li>
+        </ul>
+    </div>
+    <div class="hd">
+        <ul></ul>
+    </div>
+    <span class="prev"></span>
+    <span class="next"></span>
+</div>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+<script type="text/javascript">
+    jQuery(".fullSlide").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        autoPage: true,
+        trigger: "mouseover",
+        startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+            if ( !! curLi.attr("_src")) {
+                curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+            }
+        }
+    });
+    //上一页 下一页
+    $(".fullSlide").hover(function(){
+        $(".prev,.next").fadeTo("show",1);
+    },function(){
+        $(".prev,.next").hide();
+    })
+</script>
+<!--内容区-->
+<div class="main p_lp_main">
+    <div class="clr p_lp_titlebox">
+        <div class="p_lp_ttleft">
+            <i class="iconfont p_lp_ico1">&#xe629;</i>
+            <span>有<strong class="p_lp_lfnumb">548264</strong>位用户找到自己的家</span>
+            <span class="p_lp_lficon"><i class="p_lp_ico2"></i><i class="iconfont p_lp_ico3">&#xe610;</i></span>
+        </div>
+        <div class="p_lp_ttright">
+            <i class="iconfont p_lp_ico4">&#xe614;</i>“你未来的家总能在其中找到”
+        </div>
+    </div>
+    <div class="p_lp_scropicon">
+        <div class="m_lp_btn">
+            <a href="javascript:void(0);" class="m_lp_prev iconfont">&#xe614;</a>
+            <a href="javascript:void(0);" class="m_lp_next iconfont">&#xe610;</a>
+        </div>
+        <div class="p_lp_scrobox">
+            <ul class="p_lp_scroul">
+                <li>
+                    <img src="images/p_lp_ico01.png" alt="" class="p_lp_scrpic" />
+                    <h6>惠州华润小径湾</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico02.png" alt="" class="p_lp_scrpic" />
+                    <h6>奥地利小镇</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico03.png" alt="" class="p_lp_scrpic" />
+                    <h6>碧桂园十里银滩</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico04.png" alt="" class="p_lp_scrpic" />
+                    <h6>香格丽湾园</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico03.png" alt="" class="p_lp_scrpic" />
+                    <h6>碧桂园十里银滩</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico04.png" alt="" class="p_lp_scrpic" />
+                    <h6>香格丽湾园</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico01.png" alt="" class="p_lp_scrpic" />
+                    <h6>惠州华润小径湾</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/p_lp_ico02.png" alt="" class="p_lp_scrpic" />
+                    <h6>奥地利小镇</h6>
+                    <div class="p_lp_hunum">共<em>565</em>个居民，<em>55</em>个户型</div>
+                    <ul class="m_lp_photos">
+                        <li><a href="#"><img src="images/m_wdlpindex_photo1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo3.jpg"/></a></li>
+                        <li><a href="#"><img src="images/m_wdlpindex_photo4.jpg"/></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 家居订购流程 -->
+    <div class="m_lp_lc clr">
+        <div class="fl m_lp_lcT clr">
+            <span class="m_lp_title"><span></span></span>
+            <h5>家居订<br/>购流程</h5>
+        </div>
+        <ul class="m_lp_lcM">
+            <li>
+                <em class="iconfont fl">&#xe62d;</em>
+                <div class="fl m_lp_lcWord">
+                    <h6>选择城市</h6>
+                    <p>插选楼盘</p>
+                </div>
+                <span class="m_lp_lcM_icon"><span></span></span>
+            </li>
+            <li>
+                <em class="iconfont fl">&#xe628;</em>
+                <div class="fl m_lp_lcWord">
+                    <h6>选择户型</h6>
+                    <p>例如：两室两厅</p>
+                </div>
+                <span class="m_lp_lcM_icon"><span></span></span>
+            </li>
+            <li>
+                <em class="iconfont fl">&#xe62c;</em>
+                <div class="fl m_lp_lcWord">
+                    <h6>浏览设计方案</h6>
+                    <p>或者搜索设计方案</p>
+                </div>
+                <span class="m_lp_lcM_icon"><span></span></span>
+            </li>
+            <li>
+                <em class="iconfont fl">&#xe62b;</em>
+                <div class="fl m_lp_lcWord">
+                    <h6>订购家居方案</h6>
+                    <p>预约设计师</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="clr p_lp_titlebox">
+        <div class="p_lp_ttleft">
+            <i class="iconfont p_lp_ico1">&#xe627;</i>
+            <span>热门户型搭配方案</span>
+            <span class="p_lp_lficon"><i class="p_lp_ico2"></i><i class="iconfont p_lp_ico3">&#xe610;</i></span>
+        </div>
+        <div class="p_lp_ttright">
+            <i class="iconfont p_lp_ico4">&#xe614;</i>
+            <a href="javascript:void(0);" style="margin-left:-9px;">中国韵客厅</a>|<a href="javascript:void(0);" class="m_on">韩式田园客厅</a>|<a href="javascript:void(0);">简约主义客厅</a>|<a href="javascript:void(0);">维罗纳史诗客厅</a>|<a href="#">更多&gt;&gt;</a>
+        </div>
+    </div>
+    <!-- 热门户型搭配方案-->
+    <div class="m_lp_rm clr">
+        <div class="m_lp_rmLeft">
+            <div class="m_lp_wrapper">
+                <ul class="m_lp_list">
+                    <li _src="images/m_lp_img1.png">
+                        <a href="#"></a>
+                    </li>
+                    <li _src="images/m_lp_img1.png">
+                        <a href="#"></a>
+                    </li>
+                    <li _src="images/m_lp_img1.png">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <div class="m_lp_cur">
+                    <ul>
+                        <li><a href="javascript:void(0);"></a></li>
+                        <li><a href="javascript:void(0);"></a></li>
+                        <li><a href="javascript:void(0);"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m_lp_dp">
+                <h5><span class="fl">搭配指南</span><a href="#" class="fr">more&gt;&gt;</a></h5>
+                <ul class="m_lp_dpList">
+                    <li><a href="#">1、餐厅装修设计注意事项?</a></li>
+                    <li><a href="#">2、进门玄关的鞋柜如何设计?</a></li>
+                    <li><a href="#">3、小户型的卧房如何增加收纳?</a></li>
+                    <li><a href="#">4、简欧的餐边柜应该如何做?</a></li>
+                    <li><a href="#">5、100平米的简欧风格设计?</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m_lp_rmRight">
+                <a href="#" class="m_lp_img m_lp_img1 bigPic">
+                    <img src="images/m_lp_rm5.jpg" />
+                    <span class="m_lp_word"><span>[中海A8-A11]  06户型-客厅</span></span>
+                </a>
+                 <a href="#" class="m_lp_img m_lp_img2">
+                        <img src="images/m_lp_rm1.jpg" />
+                        <span class="m_lp_word"><span>[中海A8-A11]  06户型-客厅</span></span>
+                    </a>
+                     <a href="#" class="m_lp_img m_lp_img3">
+                        <img src="images/m_lp_rm2.jpg" />
+                        <span class="m_lp_word"><span>[中海A8-A11]  06户型-客厅</span></span>
+                    </a>
+                     <a href="#" class="m_lp_img m_lp_img4">
+                        <img src="images/m_lp_rm3.jpg" />
+                        <span class="m_lp_word"><span>[中海A8-A11]  06户型-客厅</span></span>
+                    </a>
+                     <a href="#" class="m_lp_img m_lp_img5">
+                        <img src="images/m_lp_rm4.jpg" />
+                        <span class="m_lp_word"><span>[中海A8-A11]  06户型-客厅</span></span>
+                    </a>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="p_footerbox">
+    <div class="p_footer01">
+        <div class="main clr p_ft_main1">
+            <div class="p_ft_left">
+                <img src="images/p_ft_logo.png" alt="" />
+                <p class="p_ft_phone">4006-620-605</p>
+                <p class="p_ft_24hours">24小时为您服务</p>
+            </div>
+            <dl class="p_ft_maplink01">
+                <dt>新手指南</dt>
+                <dd><a href="账户管理.html">账户管理</a></dd>
+                <dd><a href="购物流程.html">购物流程</a></dd>
+                <dd><a href="支付方式.html">支付方式</a></dd>
+                <dd><a href="配送安装.html">配送安装</a></dd>
+            </dl>
+            <dl class="p_ft_maplink02">
+                <dt>网站地图</dt>
+                <dd><a href="搭配知识.html">搭配知识</a></dd>
+                <dd><a href="找风格.html">找风格</a></dd>
+                <dd><a href="找设计.html">找设计</a></dd>
+                <dd><a href="找套装.html">找套装</a></dd>
+            </dl>
+            <dl class="p_ft_maplink03">
+                <dt>常见问题</dt>
+                <dd><a href="###">设计师如何匹配商家商品？</a></dd>
+                <dd><a href="###">订单24小时之内自动取消？</a></dd>
+                <dd><a href="###">如何参加秒杀活动？</a></dd>
+            </dl>
+            <div class="p_ft_erwm">
+                <img src="images/p_erwm.png" alt="" />
+                <p>扫一扫二维码</p>
+                <p>关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="p_footer02">
+        <div class="main p_ft_main2">
+            <div class="p_ft_fslink">
+                <a href="关于我们.html">关于我们</a> |
+                <a href="加入我们.html">加入我们</a> |
+                <a href="隐私声明.html">隐私声明</a> |
+                <a href="联系我们.html">联系我们</a> |
+                <a href="建议反馈.html">建议反馈</a> |
+                <a href="友情链接.html">友情链接</a> |
+                <a href="商家入驻.html">商家入驻</a> |
+                <a href="申请设计师.html">申请设计师</a>
+            </div>
+            <div class="p_ft_beian">Copyright© 买吉住 2015. All Rights Reserved. 粤ICP备13075660-1</div>
+        </div>
+    </div>
+</div>
+<!-- 选择地区弹窗 -->
+<div class="p_black_bg tc_maxbg"></div>
+<div class="p_choice_add tc_box">
+    <div class="p_tc_close"><a class="tc_close" title="关闭本框"><span>×</span></a></div>
+    <div class="p_pls_addbox">请选择您所在城市或收货地区：<em>深圳</em></div>
+    <ul class="p_addlistul clr">
+        <li><span>北京</span></li>
+        <li><span>上海</span></li>
+        <li><span>广州</span></li>
+        <li><span class="clicked">深圳</span></li>
+        <li><span>天津</span></li>
+        <li><span>苏州</span></li>
+        <li><span>杭州</span></li>
+        <li><span>南京</span></li>
+        <li><span>无锡</span></li>
+        <li><span>青岛</span></li>
+        <li><span>武汉</span></li>
+    </ul>
+    <table class="p_add_table" width="100%">
+        <tr height="52">
+            <th>华东</th>
+            <td><span>上海</span><span>浙江</span><span>江苏</span><span>安徽</span></td>
+        </tr>
+        <tr height="52">
+            <th>华南</th>
+            <td><span>广东</span><span>福建</span><span>海南</span><span>广西</span></td>
+        </tr>
+        <tr height="52">
+            <th>华北</th>
+            <td><span>北京</span><span>天津</span><span>河北</span><span>山东</span><span>山西</span><span>内蒙</span></td>
+        </tr>
+        <tr height="52">
+            <th>华中</th>
+            <td><span>湖北</span><span>江西</span><span>湖南</span><span>河南</span></td>
+        </tr>
+        <tr height="52">
+            <th>东北</th>
+            <td><span>辽宁</span><span>吉林</span><span>黑龙江</span></td>
+        </tr>
+        <tr height="52">
+            <th>西南</th>
+            <td><span>重庆</span><span>西川</span><span>云南</span><span>贵州</span><span>西藏</span></td>
+        </tr>
+    </table>
+</div>
+<!-- end -->
+</body>
+</html>
